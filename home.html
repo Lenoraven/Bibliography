@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<head>
+		<title>Sonja's Bibliography System</title>
+	</head>
+
+	<body>
+	
+		<h1>This is the title of the webpage (to be changed)</h1>
+
+		<h2>Insert New Author into Database</h2>
+		
+		</head>
+
+<body>
+
+	<h1>Bibliography - New Author Entry</h1>
+
+
+	<form action="formauthor.php" method="post">
+		<table border="0">
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="author[firstname]" id-"firstname"></td>
+			</tr>
+				
+			<tr>
+				<td>Middle Initials</td>
+				<td><input type="text" name="author[initials]" id="initials" ></td>
+			</tr>
+				
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="author[lastname]" id="lastname" ></td>
+			</tr>
+				
+			<tr>
+				<td colspan="2"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>		
+
+</body>
+</html> 
+
+		<h2>Search Criteria</h2>
+		<!---H2 should be in a div box aligned either to the left or across the top under the main title-->
+
+		<div align="left">
+			<select name="Search by">
+				<option value="author">Author</option>
+				<option value="title">Title</option>
+				<option value="journal">Journal</option>
+				<option value="year">Year</option>
+			</select>
+		</div>
+		<!--I think that I initally want just one search option - dropdown choice followed by keyword, link to database table accordingly-->
+		<div align="right">
+			<form>
+				Search Keyword: <input type="text" keyword="keyword">
+			</form>
+		</div>
+
+		<h1>Search Results</h1>
+		<!--if the search criteria is aligned to the left, then this should be aligned to the right-->
+		
+		<!--actually, I should probably put the results on a second page...would be easier and make more sense-->
+
+		<h2>Selected Result</h2>
+		<!--for this heading the selected result should appear in a box which has a new drop down menu-->
+		<select name="Citation style">
+				<option value="mla">MLA</option>
+				<option value="asa">ASA</option>
+				<option value="chicago">Chicago</option>
+			</select>
+
+		<h2>Associated Notes and Files</h2>
+		<!--in this box, should display any associated files/notes for the selected result-->
+
+		<h3>Citation Result</h3>
+		<!--this, which should be in a box at the bottom of the page should display the citation in Times New Roman, 12 pt black and white (for copy paste)-->
+
+
+	</body>
+
+
+
+
+
+
+
+</html>
